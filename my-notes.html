@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes - Study Notes Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="2tuju-19.jpg" alt="Study Notes Logo" class="logo">
+                <h1 class="title-text">My Notes</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="my-notes.html" class="active">My Notes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" id="loginNav"><span id="loginText">Login</span></a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">Menu</div>
+        </header>
+
+        <section class="content-card fade-in">
+            <div class="subject-header">
+                <h2>My Notes</h2>
+                <div id="loginPrompt">
+                    <p>Please <a href="login.html">login</a> to access your notes.</p>
+                </div>
+            </div>
+            
+            <div id="notesContainer" style="display: none;">
+                <div class="notes-section">
+                    <h3>Create New Note</h3>
+                    <div class="form-group">
+                        <label for="noteTitle">Title:</label>
+                        <input type="text" id="noteTitle" placeholder="Note title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noteSubject">Subject:</label>
+                        <select id="noteSubject">
+                            <option value="math">Mathematics</option>
+                            <option value="science">Science</option>
+                            <option value="english">English</option>
+                            <option value="history">History</option>
+                            <option value="geography">Geography</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="noteInput">Content:</label>
+                        <textarea id="noteInput" placeholder="Write your note here..." rows="6"></textarea>
+                    </div>
+                    <button onclick="saveNote()" class="action-button">Save Note</button>
+                </div>
+                
+                <div class="notes-section">
+                    <h3>Search Notes</h3>
+                    <div class="form-group">
+                        <label for="regexSearch">Search:</label>
+                        <input type="text" id="regexSearch" placeholder="Enter regex pattern">
+                        <button onclick="runRegexSearch()" class="action-button">Search</button>
+                    </div>
+                    <div id="regexResult" class="result-box"></div>
+                </div>
+                
+                <div class="notes-section">
+                    <div id="notesDisplay"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Study Notes Organizer | Designed for learners</p>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

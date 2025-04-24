@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Study Notes Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="2tuju-19.jpg" alt="Study Notes Logo" class="logo">
+                <h1 class="title-text">Study Notes Organizer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">Menu</div>
+        </header>
+
+        <section class="content-card fade-in">
+            <div class="subject-header">
+                <h2>Login</h2>
+            </div>
+            
+            <div id="loginContainer">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                        <span id="usernameError" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <span id="passwordError" class="error-message"></span>
+                    </div>
+                    <button type="submit" class="action-button">Login</button>
+                </form>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="javascript:void(0)" id="showRegister">Register here</a></p>
+                </div>
+            </div>
+
+            <div id="registerContainer" style="display: none;">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="newUsername">Username:</label>
+                        <input type="text" id="newUsername" placeholder="Choose a username (at least 4 characters)" required>
+                        <span id="newUsernameError" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                        <span id="emailError" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Password:</label>
+                        <input type="password" id="newPassword" placeholder="Choose a password (minimum 8 characters)" required>
+                        <span id="newPasswordError" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                        <span id="confirmPasswordError" class="error-message"></span>
+                    </div>
+                    <button type="submit" class="action-button">Register</button>
+                </form>
+                <div class="login-link">
+                    <p>Already have an account? <a href="javascript:void(0)" id="showLogin">Login here</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Study Notes Organizer | Designed for learners</p>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
