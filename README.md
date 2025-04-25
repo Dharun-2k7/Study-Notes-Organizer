@@ -16,5 +16,5 @@ The platform offers features like note creation, categorization, and an efficien
 - Mobile-friendly design
 
 ## Installation
-Clone the repository to your local machine:  https://github.com/Dharun-2k7/study-notes-organizer.git
+Clone the repository to your local machine:  https://dharun-2k7.github.io/study-notes-organizer/
 
