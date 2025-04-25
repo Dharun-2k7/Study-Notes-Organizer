@@ -15,4 +15,6 @@ The platform offers features like note creation, categorization, and an efficien
 - Regex search functionality
 - Mobile-friendly design
 
+## Installation
+Clone the repository to your local machine:  https://dharun-2k7.github.io/study-notes-organizer/
 
